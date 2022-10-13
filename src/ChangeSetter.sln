@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeSetter", "ChangeSetter\ChangeSetter.csproj", "{E2AC0C4E-27BB-4368-9A05-0B8D3D52B6A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeSetterPlayground", "ChangeSetterPlayground\ChangeSetterPlayground.csproj", "{231C31F8-C5BB-4826-83DD-3EBB176C66FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E2AC0C4E-27BB-4368-9A05-0B8D3D52B6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AC0C4E-27BB-4368-9A05-0B8D3D52B6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AC0C4E-27BB-4368-9A05-0B8D3D52B6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AC0C4E-27BB-4368-9A05-0B8D3D52B6A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{231C31F8-C5BB-4826-83DD-3EBB176C66FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231C31F8-C5BB-4826-83DD-3EBB176C66FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231C31F8-C5BB-4826-83DD-3EBB176C66FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231C31F8-C5BB-4826-83DD-3EBB176C66FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F271ED-7B5F-4C26-A1BE-8172BC4429D2}
+	EndGlobalSection
+EndGlobal
