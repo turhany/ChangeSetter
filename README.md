@@ -8,7 +8,7 @@ Set only chaged field(s) between objects.
 - Set Property
 - Set Fields
 
-Sample Code
+#### Usages:
 
 ```cs
 var testObject = new TestClass();
