@@ -1,11 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information 
-using ChangeSetter.Extensions;
-
-var testObject = new TestClass();
+﻿var testObject = new TestClass();
 var testObject2 = new TestClass2();
-
-
-var changedObject = new ChangeSetter.ChangeSetter().Map<TestClass, TestClass2>(testObject, testObject2, new List<ChangeSetter.Models.CustomFieldMapping>
+ 
+var changeResult = new ChangeSetter.ChangeSetter().Map<TestClass, TestClass2>(ref testObject, ref testObject2, new List<ChangeSetter.Models.CustomFieldMapping>
 {
     new ChangeSetter.Models.CustomFieldMapping{
         SourceField = "NamePublic",
@@ -19,49 +15,7 @@ var changedObject = new ChangeSetter.ChangeSetter().Map<TestClass, TestClass2>(t
     }
 });
 
-var propertyNames = new List<string>()
-{
-    "NamePublic",
-    "NamePrivate",
-    "NameProtected",
-    "NameStatic"
-};
-var fieldNames = new List<string>(){
-    "SurnamePublic",
-    "SurnamePrivate",
-    "SurnameProtected",
-    "SurnameStatic"
-};
-
-foreach (var propertyName in propertyNames)
-{
-    if (testObject.HasProperty(propertyName))
-    {
-        var val = testObject.GetPropertyValue<object>(propertyName);
-        Console.WriteLine($"Property: {propertyName} > {val}");
-    }
-    else
-    {
-        Console.WriteLine($"Property not exist! > {propertyName}");
-    }
-}
-
-Console.WriteLine();
-Console.WriteLine("-------------");
-Console.WriteLine();
-
-foreach (var fieldName in fieldNames)
-{
-    if (testObject.HasField(fieldName))
-    {
-        var val = testObject.GetFieldValue<object>(fieldName);
-        Console.WriteLine($"Field: {fieldName} > {val}");
-    }
-    else
-    {
-        Console.WriteLine($"Field not exist! > {fieldName}");
-    }
-}
+Console.WriteLine("HasChanges: " + changeResult.HasChanges);
 
 Console.ReadKey();
 
