@@ -1,4 +1,4 @@
-![alt tag](/img/exporty.png)  
+![alt tag](/img/changesetter.png)  
 
 Set only chaged field(s) between objects.
 
