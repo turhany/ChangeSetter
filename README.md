@@ -11,6 +11,14 @@ Set only chaged field(s) between objects.
 #### Usages:
 
 ```cs
+//Generic Change Setter Response
+public class ChangeSetterResult<T>
+{
+    public bool HasChanges { get; set; }
+    public T Value { get; set; }
+}
+
+
 var testObject = new TestClass();
 var testObject2 = new TestClass2();
  
