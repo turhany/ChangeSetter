@@ -62,3 +62,8 @@ class TestClass2
     static string SurnameStatic = "SurnameStaticValue2";
 }
 ```
+
+### Release Notes
+
+#### 1.0.0
+* Base Release
